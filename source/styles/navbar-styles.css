@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+body {
+    font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+}
+
+.card-text {
+    font-size: 17px;
+}
+
+.bg-orange {
+    background: linear-gradient(0deg, #fc8507 0%, #ffa218 100%);
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-brand img {
+    width: 3em;
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+
+.navbar {
+    --bs-navbar-toggler-border-color: white;
+}
+
+.card {
+    width: 80%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .16);
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card img {
+    width: 80%;
+    margin: 2em;
+}
+
+.rocent {
+    margin-left: 3.5em;
+}
+
+header {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .30);
+}
+
+.sidebar {
+    padding-right: 5rem;
+}
+
+.card-title {
+    font-weight: bolder;
+}
+
+.card-title>a {
+    color: black;
+}
+
+.card-text>a {
+    color: black;
+}
+
+.slide-text {
+    margin: auto auto;
+    padding-right: 10rem;
+}
+
+footer {
+    background: linear-gradient(0deg, #fc8507 0%, #ffa218 100%);
+    color: white;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .30);
+
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .30);
+    animation: myAnim 2s ease 5s infinite normal forwards;
+}
+
+.btn-outline-warning {
+    --bs-btn-color: #fc8507; 
+    --bs-btn-border-color: #fc8507;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #fc8507;
+    --bs-btn-hover-border-color: #fc8507;
+    --bs-btn-focus-shadow-rgb: 255, 193, 7;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #fc8507;
+    --bs-btn-active-border-color: #fc8507;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fc8507;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #fc8507;
+    --bs-gradient: none;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+@media (max-width: 1024px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
